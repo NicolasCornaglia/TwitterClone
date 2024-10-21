@@ -1,4 +1,3 @@
-import { profile } from 'console';
 import User from '../models/user.model.js';
 import bcrypt from 'bcryptjs';
 import generateTokeAndSetCookie from '../lib/utils/generateToken.js';
