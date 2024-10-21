@@ -1,0 +1,1 @@
+Backend packages are installed in the root folder of the project to simplify the deployment.
