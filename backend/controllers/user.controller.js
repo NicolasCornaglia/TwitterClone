@@ -47,7 +47,7 @@ export const followUnfollowUser = async (req, res) => {
       const notification = new Notification({
         form: currentUser._id,
         to: userToModify._id,
-        typee: "follow",
+        type: "follow",
         read: false,
       });
 
