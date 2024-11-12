@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 import { format } from 'path';
 
 const notificationSchema = new mongoose.Schema({
-    form: {
+    from: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User',
         required: true
