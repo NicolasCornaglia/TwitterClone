@@ -45,7 +45,7 @@ export const followUnfollowUser = async (req, res) => {
       await User.findOneAndUpdate(req.user._id, { $push: { following: id } });
       // Send notification to user
       const notification = new Notification({
-        form: currentUser._id,
+        from: currentUser._id,
         to: userToModify._id,
         type: "follow",
         read: false,
